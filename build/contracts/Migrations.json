@@ -50,7 +50,7 @@
   "sourceMap": "66:304:0:-;;;115:10;92:33;;;;;;;;;;;;;;;;;;;;66:304;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:304:0;;;;;;;",
   "deployedSourceMap": "66:304:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;131:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;131:36:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;92:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:33:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;260:108;;8:9:-1;5:2;;;30:1;27;20:12;5:2;260:108:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;260:108:0;;;;;;;;;;;;;;;;;:::i;:::-;;131:36;;;;:::o;92:33::-;;;;;;;;;;;;;:::o;260:108::-;231:5;;;;;;;;;;;217:19;;:10;:19;;;214:24;;;352:9;325:24;:36;;;;214:24;260:108;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n    address public owner = msg.sender;\n    uint public last_completed_migration;\n\n    modifier restricted(){\n        \n        if(msg.sender == owner)_;\n        \n    }\n\n    function setCompleted(uint completed) public restricted{\n        last_completed_migration = completed;\n    }\n}",
-  "sourcePath": "/var/local/www/w3/crypto/blockchainEthereum/facet/blockchainEthereum/contracts/Migrations.sol",
+  "sourcePath": "/var/local/www/w3/webdesign/crypto/blockchainEthereum/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -794,12 +794,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x43c0238411011fB13e717a6C21E3406C1cF79fD9",
-      "transactionHash": "0x53f25cd500c572851e4d08e3af35bbbd161bb7622f6f63d6478770f069807ec8"
+      "address": "0xC9BeECDC6AB5b85381dCfCDBe9C431b7473b18a7",
+      "transactionHash": "0xe18c469b14319b5e8d00da63d438fc83673acc547621d860d1b477c20b8f9c50"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-04T23:24:46.756Z",
+  "updatedAt": "2024-01-05T05:51:27.771Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
