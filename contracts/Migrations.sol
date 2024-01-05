@@ -7,8 +7,11 @@ contract Migrations {
 
     modifier restricted(){
         
-        if(msg.sender == owner)_;
-        
+        require(msg.sender == owner,
+        "This function is restricted to contract owner"
+
+        );
+        _;
     }
 
     function setCompleted(uint completed) public restricted{
