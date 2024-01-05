@@ -2,63 +2,30 @@
   "contractName": "faucet",
   "abi": [
     {
-      "constant": true,
-      "inputs": [],
-      "name": "counter",
-      "outputs": [
-        {
-          "name": "",
-          "type": "int256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "funds",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "test",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint32"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
+      "stateMutability": "payable",
+      "type": "receive",
+      "payable": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"counter\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"funds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"test\",\"outputs\":[{\"name\":\"\",\"type\":\"uint32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"faucet\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0x9a018b27c81fd593b8390a1edaa17e63b46211a942c2420e6d226c90643228fc\",\"urls\":[\"bzzr://2f4c4de641669ba71deefe7bc968e7ec210076a2205e1aa3c5c1419e19b68882\"]}},\"version\":1}",
-  "bytecode": "0x60806040526103e86000557ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff660015563ffffffff600260006101000a81548163ffffffff021916908363ffffffff16021790555034801561005f57600080fd5b506101248061006f6000396000f3fe608060405260043610604d576000357c01000000000000000000000000000000000000000000000000000000009004806361bc221a146052578063c89f2ce414607a578063f8a8fd6d1460a2575b600080fd5b348015605d57600080fd5b50606460d6565b6040518082815260200191505060405180910390f35b348015608557600080fd5b50608c60dc565b6040518082815260200191505060405180910390f35b34801560ad57600080fd5b5060b460e2565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b60015481565b60005481565b600260009054906101000a900463ffffffff168156fea165627a7a72305820c957167a8314bfbb02eb3c3f1e8a9d714ad12b16441b4adea2362635f11074510029",
-  "deployedBytecode": "0x608060405260043610604d576000357c01000000000000000000000000000000000000000000000000000000009004806361bc221a146052578063c89f2ce414607a578063f8a8fd6d1460a2575b600080fd5b348015605d57600080fd5b50606460d6565b6040518082815260200191505060405180910390f35b348015608557600080fd5b50608c60dc565b6040518082815260200191505060405180910390f35b34801560ad57600080fd5b5060b460e2565b604051808263ffffffff1663ffffffff16815260200191505060405180910390f35b60015481565b60005481565b600260009054906101000a900463ffffffff168156fea165627a7a72305820c957167a8314bfbb02eb3c3f1e8a9d714ad12b16441b4adea2362635f11074510029",
-  "sourceMap": "66:117:0:-;;;108:4;88:24;;139:3;118:24;;169:10;148:31;;;;;;;;;;;;;;;;;;;;66:117;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:117:0;;;;;;;",
-  "deployedSourceMap": "66:117:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;118:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;118:24:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;88:24:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;148:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;148:31:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;118:24;;;;:::o;88:::-;;;;:::o;148:31::-;;;;;;;;;;;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract faucet {\n    uint public funds = 1000;\n    int public counter = -10;\n    uint32 public test = 4294967295; \n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"faucet\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0xac23c438c782cc05cf5199e5d9719345b747a5abf07efbd7d73d50737964b730\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://78d83a526c871d1205698395de2eab9bf55a0369355c8cf34fd894b2628f4024\",\"dweb:/ipfs/QmcLL5RUNDF3oLBvNYWkLqjBRghUhnd3t3hEct1nyx9f2b\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50604580601d6000396000f3fe608060405236600a57005b600080fdfea26469706673582212209cdfdcde82ca02716dc5ef61d090b7d0e175037a76d9c58752095574a3fcbceb64736f6c63430008040033",
+  "deployedBytecode": "0x608060405236600a57005b600080fdfea26469706673582212209cdfdcde82ca02716dc5ef61d090b7d0e175037a76d9c58752095574a3fcbceb64736f6c63430008040033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:53:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:53:0:-:0;;;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract faucet {\n    receive() external payable {}\n}\n",
   "sourcePath": "/var/local/www/w3/webdesign/crypto/blockchainEthereum/contracts/FaucetContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/FaucetContract.sol",
     "exportedSymbols": {
       "faucet": [
-        12
+        6
       ]
     },
-    "id": 13,
+    "id": 7,
+    "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -76,386 +43,82 @@
         "src": "32:32:0"
       },
       {
+        "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": null,
         "fullyImplemented": true,
-        "id": 12,
+        "id": 6,
         "linearizedBaseContracts": [
-          12
+          6
         ],
         "name": "faucet",
+        "nameLocation": "75:6:0",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 4,
-            "name": "funds",
-            "nodeType": "VariableDeclaration",
-            "scope": 12,
-            "src": "88:24:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_uint256",
-              "typeString": "uint256"
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "115:2:0",
+              "statements": []
             },
-            "typeName": {
+            "id": 5,
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
               "id": 2,
-              "name": "uint",
-              "nodeType": "ElementaryTypeName",
-              "src": "88:4:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_uint256",
-                "typeString": "uint256"
-              }
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "95:2:0"
             },
-            "value": {
-              "argumentTypes": null,
-              "hexValue": "31303030",
+            "returnParameters": {
               "id": 3,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "number",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "108:4:0",
-              "subdenomination": null,
-              "typeDescriptions": {
-                "typeIdentifier": "t_rational_1000_by_1",
-                "typeString": "int_const 1000"
-              },
-              "value": "1000"
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:0:0"
             },
-            "visibility": "public"
-          },
-          {
-            "constant": false,
-            "id": 8,
-            "name": "counter",
-            "nodeType": "VariableDeclaration",
-            "scope": 12,
-            "src": "118:24:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_int256",
-              "typeString": "int256"
-            },
-            "typeName": {
-              "id": 5,
-              "name": "int",
-              "nodeType": "ElementaryTypeName",
-              "src": "118:3:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_int256",
-                "typeString": "int256"
-              }
-            },
-            "value": {
-              "argumentTypes": null,
-              "id": 7,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "lValueRequested": false,
-              "nodeType": "UnaryOperation",
-              "operator": "-",
-              "prefix": true,
-              "src": "139:3:0",
-              "subExpression": {
-                "argumentTypes": null,
-                "hexValue": "3130",
-                "id": 6,
-                "isConstant": false,
-                "isLValue": false,
-                "isPure": true,
-                "kind": "number",
-                "lValueRequested": false,
-                "nodeType": "Literal",
-                "src": "140:2:0",
-                "subdenomination": null,
-                "typeDescriptions": {
-                  "typeIdentifier": "t_rational_10_by_1",
-                  "typeString": "int_const 10"
-                },
-                "value": "10"
-              },
-              "typeDescriptions": {
-                "typeIdentifier": "t_rational_minus_10_by_1",
-                "typeString": "int_const -10"
-              }
-            },
-            "visibility": "public"
-          },
-          {
-            "constant": false,
-            "id": 11,
-            "name": "test",
-            "nodeType": "VariableDeclaration",
-            "scope": 12,
-            "src": "148:31:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_uint32",
-              "typeString": "uint32"
-            },
-            "typeName": {
-              "id": 9,
-              "name": "uint32",
-              "nodeType": "ElementaryTypeName",
-              "src": "148:6:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_uint32",
-                "typeString": "uint32"
-              }
-            },
-            "value": {
-              "argumentTypes": null,
-              "hexValue": "34323934393637323935",
-              "id": 10,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "number",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "169:10:0",
-              "subdenomination": null,
-              "typeDescriptions": {
-                "typeIdentifier": "t_rational_4294967295_by_1",
-                "typeString": "int_const 4294967295"
-              },
-              "value": "4294967295"
-            },
-            "visibility": "public"
+            "scope": 6,
+            "src": "88:29:0",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
           }
         ],
-        "scope": 13,
-        "src": "66:117:0"
+        "scope": 7,
+        "src": "66:53:0",
+        "usedErrors": []
       }
     ],
-    "src": "32:151:0"
-  },
-  "legacyAST": {
-    "attributes": {
-      "absolutePath": "project:/contracts/FaucetContract.sol",
-      "exportedSymbols": {
-        "faucet": [
-          12
-        ]
-      }
-    },
-    "children": [
-      {
-        "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.4",
-            ".22",
-            "<",
-            "0.9",
-            ".0"
-          ]
-        },
-        "id": 1,
-        "name": "PragmaDirective",
-        "src": "32:32:0"
-      },
-      {
-        "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
-          "contractKind": "contract",
-          "documentation": null,
-          "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            12
-          ],
-          "name": "faucet",
-          "scope": 13
-        },
-        "children": [
-          {
-            "attributes": {
-              "constant": false,
-              "name": "funds",
-              "scope": 12,
-              "stateVariable": true,
-              "storageLocation": "default",
-              "type": "uint256",
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "name": "uint",
-                  "type": "uint256"
-                },
-                "id": 2,
-                "name": "ElementaryTypeName",
-                "src": "88:4:0"
-              },
-              {
-                "attributes": {
-                  "argumentTypes": null,
-                  "hexvalue": "31303030",
-                  "isConstant": false,
-                  "isLValue": false,
-                  "isPure": true,
-                  "lValueRequested": false,
-                  "subdenomination": null,
-                  "token": "number",
-                  "type": "int_const 1000",
-                  "value": "1000"
-                },
-                "id": 3,
-                "name": "Literal",
-                "src": "108:4:0"
-              }
-            ],
-            "id": 4,
-            "name": "VariableDeclaration",
-            "src": "88:24:0"
-          },
-          {
-            "attributes": {
-              "constant": false,
-              "name": "counter",
-              "scope": 12,
-              "stateVariable": true,
-              "storageLocation": "default",
-              "type": "int256",
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "name": "int",
-                  "type": "int256"
-                },
-                "id": 5,
-                "name": "ElementaryTypeName",
-                "src": "118:3:0"
-              },
-              {
-                "attributes": {
-                  "argumentTypes": null,
-                  "isConstant": false,
-                  "isLValue": false,
-                  "isPure": true,
-                  "lValueRequested": false,
-                  "operator": "-",
-                  "prefix": true,
-                  "type": "int_const -10"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "argumentTypes": null,
-                      "hexvalue": "3130",
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "lValueRequested": false,
-                      "subdenomination": null,
-                      "token": "number",
-                      "type": "int_const 10",
-                      "value": "10"
-                    },
-                    "id": 6,
-                    "name": "Literal",
-                    "src": "140:2:0"
-                  }
-                ],
-                "id": 7,
-                "name": "UnaryOperation",
-                "src": "139:3:0"
-              }
-            ],
-            "id": 8,
-            "name": "VariableDeclaration",
-            "src": "118:24:0"
-          },
-          {
-            "attributes": {
-              "constant": false,
-              "name": "test",
-              "scope": 12,
-              "stateVariable": true,
-              "storageLocation": "default",
-              "type": "uint32",
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "name": "uint32",
-                  "type": "uint32"
-                },
-                "id": 9,
-                "name": "ElementaryTypeName",
-                "src": "148:6:0"
-              },
-              {
-                "attributes": {
-                  "argumentTypes": null,
-                  "hexvalue": "34323934393637323935",
-                  "isConstant": false,
-                  "isLValue": false,
-                  "isPure": true,
-                  "lValueRequested": false,
-                  "subdenomination": null,
-                  "token": "number",
-                  "type": "int_const 4294967295",
-                  "value": "4294967295"
-                },
-                "id": 10,
-                "name": "Literal",
-                "src": "169:10:0"
-              }
-            ],
-            "id": 11,
-            "name": "VariableDeclaration",
-            "src": "148:31:0"
-          }
-        ],
-        "id": 12,
-        "name": "ContractDefinition",
-        "src": "66:117:0"
-      }
-    ],
-    "id": 13,
-    "name": "SourceUnit",
-    "src": "32:151:0"
+    "src": "32:88:0"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xe526153Bc2b2169d2fCCFE74229C5B2e2460cb9A",
-      "transactionHash": "0x6cd5ef3ff7ac9c6d576cdd500878de115429f0fbc9f03463cc4ebfc15d59ca62"
+      "address": "0x584d838dDF39905EF449f2B70E5d1C07f20Df985",
+      "transactionHash": "0x5d3ddd9965b5578d263c0ecbfd2da1311222325733600607284ce983c09c4e26"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-05T16:54:05.008Z",
+  "updatedAt": "2024-01-05T18:31:01.090Z",
   "networkType": "ethereum",
   "devdoc": {
-    "methods": {}
+    "kind": "dev",
+    "methods": {},
+    "version": 1
   },
   "userdoc": {
-    "methods": {}
+    "kind": "user",
+    "methods": {},
+    "version": 1
   }
 }
