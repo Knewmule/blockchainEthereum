@@ -1,25 +1,26 @@
 {
-  "contractName": "faucet",
+  "contractName": "Faucet",
   "abi": [
     {
       "stateMutability": "payable",
-      "type": "receive"
+      "type": "receive",
+      "payable": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"faucet\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0x6d10b86b0a1d6ca7715dbbaa691feb37fc591f94af614628cf4ad13c398777f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d2bc62405a98006f806e9f564677b0de91941f2251ea5ca35da20095428732c\",\"dweb:/ipfs/QmTWB3fcnDbabsU622BuUwvgvySB1Kd3LSvRQBkbNWFU5f\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50604580601d6000396000f3fe608060405236600a57005b600080fdfea26469706673582212205dcf1a40ea2f89012239c868395f49710df4c0327751cb777f3f027f77bd312864736f6c63430008040033",
-  "deployedBytecode": "0x608060405236600a57005b600080fdfea26469706673582212205dcf1a40ea2f89012239c868395f49710df4c0327751cb777f3f027f77bd312864736f6c63430008040033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FaucetContract.sol\":\"Faucet\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FaucetContract.sol\":{\"keccak256\":\"0xf4e3783d10408896197bbd5b0b66ce415bcf2af08c63b6cb648ac0a4d709714f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://35fb3aeb85c8943db008d32612c53d454526a87aa9249fd94ac6c92f366177ac\",\"dweb:/ipfs/QmPT2PmUNbsTaMR5kCnniF3Gs16U1KCvuVDJCEbrHLnMnA\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50604580601d6000396000f3fe608060405236600a57005b600080fdfea2646970667358221220e90abd4d2225b3a22eeb6f2a7f028b39fe3aee2decf74452bdaf72b28df4b5d464736f6c63430008040033",
+  "deployedBytecode": "0x608060405236600a57005b600080fdfea2646970667358221220e90abd4d2225b3a22eeb6f2a7f028b39fe3aee2decf74452bdaf72b28df4b5d464736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "66:298:0:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "66:298:0:-:0;;;;;;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract faucet {\n    // this is a special function\n    //its called when you make a tx that does not specify function name to call\n\n    // External function are part of the contract interface\n    // which means they can be called via contracts and other tx\n    \n    receive() external payable {}\n}\n",
+  "sourceMap": "66:405:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:405:0:-:0;;;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Faucet {\n    // this is a special function\n    //its called when you make a tx that does not specify function name to call\n\n    // External function are part of the contract interface\n    // which means they can be called via contracts and other tx\n    \n    receive() external payable {}\n\n    // uint public funds = 1000;\n    // int public counter = -10;\n    // uint32 public test = 4294967295;\n}\n",
   "sourcePath": "/var/local/www/w3/webdesign/crypto/blockchainEthereum/contracts/FaucetContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/FaucetContract.sol",
     "exportedSymbols": {
-      "faucet": [
+      "Faucet": [
         6
       ]
     },
@@ -51,7 +52,7 @@
         "linearizedBaseContracts": [
           6
         ],
-        "name": "faucet",
+        "name": "Faucet",
         "nameLocation": "75:6:0",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -89,11 +90,11 @@
           }
         ],
         "scope": 7,
-        "src": "66:298:0",
+        "src": "66:405:0",
         "usedErrors": []
       }
     ],
-    "src": "32:333:0"
+    "src": "32:440:0"
   },
   "compiler": {
     "name": "solc",
@@ -103,12 +104,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x584d838dDF39905EF449f2B70E5d1C07f20Df985",
-      "transactionHash": "0x5d3ddd9965b5578d263c0ecbfd2da1311222325733600607284ce983c09c4e26"
+      "address": "0xaA668D88866f0C84CB73f8270499c87d582547E1",
+      "transactionHash": "0x7b40717a1bed0b20cb202c230bd2865b6904ad98587c1af460642f9c5875794b"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-11T08:04:54.599Z",
+  "updatedAt": "2024-01-11T09:00:37.814Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

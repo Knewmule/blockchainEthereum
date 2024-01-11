@@ -1,8 +1,13 @@
-ethereremix.io etherscan.io etherview.live ethash.ethereum
+ethereremix.io etherscan.io etherviewer.live ethash.ethereum
 
 truffle migrate --reset
 
 pro@Highfive10:/var/local/www/w3/webdesign/crypto/blockchainEthereum$ truffle console
+const instance = await faucet.deployed()
+const instance = new web3.eth.Contract(Faucet.abi,"0x584d838dDF39905EF449f2B70E5d1C07f20Df985")
+const funds = await instance.funds()
+const funds = await instance.methods.funds().call()
+truffle migrate --reset
 truffle(development)> accounts
 [
   '0xE06962fc717c4bb755AaDdbf2314b49587debEDF',
